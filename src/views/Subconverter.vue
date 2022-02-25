@@ -254,6 +254,7 @@ export default {
           "自动判断客户端": "auto",
         },
         customBackend: {
+	  "leftcausedit": "https://subconverter.nas.leftcuz.top:4433/sub?"
           "api.tsutsu.cc (つつ提供-香港CN2稳定)": "https://api.tsutsu.cc/sub?",
           "api2.tsutsu.cc (つつ提供-香港CN2备用)": "https://api2.tsutsu.cc/sub?",
           "api.v1.mk（肥羊提供-四端八核负载)": "https://api.v1.mk/sub?",
@@ -264,7 +265,8 @@ export default {
           "sub.id9.cc (品云提供)": "https://sub.id9.cc/sub?",
         },
         backendOptions: [
-          { value: "https://api.tsutsu.cc/sub?" },
+          { value: "https://subconverter.nas.leftcuz.top:4433/sub?" },
+	  { value: "https://api.tsutsu.cc/sub?" },
           { value: "https://api2.tsutsu.cc/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
@@ -274,7 +276,17 @@ export default {
           { value: "https://sub.id9.cc/sub?" },
         ],
         remoteConfig: [
-          {
+          { 
+	    label: "leftcausedit",
+	    options: [
+	      { 
+	        label: "leftcausedit",
+	        value: 
+		  "https://filelist.nas.leftcuz.top:4433/document/subweb/leftcausedit_sub.ini"
+	      },
+	    ]
+	  },
+	  {
             label: "つつ自用,投稿请tg找 @Ox208",
             options: [
               {
